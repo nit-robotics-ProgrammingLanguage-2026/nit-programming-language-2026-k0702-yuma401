@@ -1,17 +1,24 @@
+
 #include <stdio.h>
 
 int func3(int a, int b);
 
+int func3(int a, int b)
+{
+    if (a >= b) {
+        return a - b;
+    } else {
+        return b - a;
+    }
+}
+
 int main(void)
 {
     int n;
-    scanf("%d", &n);
-    printf("%d", func3(10, n));
-    return 0;
-}
 
-int func3(int a, int b)
-{
-    /* TODO: a と b の差の絶対値を返す */
+    scanf("%d", &n);
+
+    printf("%d\n", func3(10, n));
+
     return 0;
 }
